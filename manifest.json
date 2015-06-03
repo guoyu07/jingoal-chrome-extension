@@ -1,0 +1,26 @@
+{
+  "name": "今目标ID显示扩展",
+  "version": "0.2",
+  "manifest_version": 2,
+  
+  "content_scripts": [
+      {
+		  "all_frames":true,
+        "matches": ["http://web.jingoal.com/*"],
+        "js": ["jquery-2.0.0.min.js", "myscript.js"]
+      }
+    ],
+	
+	
+	"permissions": [
+	    "tabs", "http://web.jingoal.com/*"
+	  ]//,
+	  
+	  //"background_page": "background.html",
+	  
+	  //"background": {
+	//  "page":"background.html"
+		   //"scripts": ["jquery-2.0.0.min.js","myscript.js"] 
+		   //}
+	  
+}
